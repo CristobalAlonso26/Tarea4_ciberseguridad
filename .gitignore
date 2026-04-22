@@ -7,3 +7,4 @@ temp_repos/
 sboms/
 vulns/
 .env
+AGENTS.md
