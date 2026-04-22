@@ -6,3 +6,4 @@ repos_activos.json
 temp_repos/
 sboms/
 vulns/
+.env
