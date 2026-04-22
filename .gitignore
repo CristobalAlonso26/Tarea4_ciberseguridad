@@ -7,3 +7,5 @@ temp_repos/
 sboms/
 vulns/
 .env
+data/repos/
+data/results/*.json
