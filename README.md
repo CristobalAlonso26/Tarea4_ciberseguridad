@@ -1,4 +1,4 @@
-# Análisis de SBOMs y Vulnerabilidades
+# Análisis de SBOMs y Vulnerabilidades - Cristobal Ramos - Leonardo Castellón
 
 Este proyecto automatiza la generación de Software Bill of Materials (SBOM) y el escaneo de vulnerabilidades en repositorios activos de una organización en GitHub.
 
