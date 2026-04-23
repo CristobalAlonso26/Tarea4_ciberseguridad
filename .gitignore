@@ -9,3 +9,5 @@ vulns/
 .env
 data/repos/
 data/results/*.json
+data/results/sast/
+.opencode/

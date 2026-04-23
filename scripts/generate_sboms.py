@@ -9,9 +9,10 @@ REPOS_JSON = "data/results/repos_activos.json"
 REPOS_DIR = "data/repos"
 SBOMS_DIR = "data/results/sboms"
 VULNS_DIR = "data/results/vulns"
+SAST_DIR = "data/results/sast"
 
 # Crear directorios
-for directory in [REPOS_DIR, SBOMS_DIR, VULNS_DIR]:
+for directory in [REPOS_DIR, SBOMS_DIR, VULNS_DIR, SAST_DIR]:
     os.makedirs(directory, exist_ok=True)
 
 
@@ -50,7 +51,14 @@ def procesar_repositorios():
         with open(vuln_path, "w") as vuln_file:
             subprocess.run(grype_cmd, stdout=vuln_file, check=True, stderr=subprocess.DEVNULL)
 
-        # 4. Limpieza agresiva de disco
+        # 4. Análisis estático del código fuente (Semgrep)
+        print("    -> Escaneando código fuente (Semgrep)...")
+        sast_path = os.path.join(SAST_DIR, f"{name}_sast.json")
+        semgrep_cmd = ["semgrep", "scan", "--config", "auto", "--json", repo_path]
+        with open(sast_path, "w") as sast_file:
+            subprocess.run(semgrep_cmd, stdout=sast_file, check=False, stderr=subprocess.DEVNULL)
+
+        # 5. Limpieza agresiva de disco
         print("    -> Limpiando disco...")
         shutil.rmtree(repo_path, ignore_errors=True)
 

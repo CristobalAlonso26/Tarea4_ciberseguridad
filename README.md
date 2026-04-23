@@ -7,6 +7,7 @@ Para que los scripts de Python funcionen, es necesario instalar los binarios nat
 
 1. **Instalar Syft:** `curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo sh -s -- -b /usr/local/bin`
 2. **Instalar Grype:** `curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo sh -s -- -b /usr/local/bin`
+3. **Instalar Semgrep:** `curl -sSfL https://raw.githubusercontent.com/semgrep/semgrep/develop/scripts/install.sh | sudo sh -s -- -b /usr/local/bin`
 
 ## Instalación del Entorno
 1. Clonar este repositorio.
