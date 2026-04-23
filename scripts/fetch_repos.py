@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ORG = "encode"
+MAX_REPOS = 50
 TOKEN = os.getenv("GITHUB_TOKEN")
 RESULTS_DIR = "data/results"
 OUTPUT_FILE = os.path.join(RESULTS_DIR, "repos_activos.json")
@@ -27,6 +28,12 @@ def get_active_repos(org, days=30):
         return []
 
     repos = response.json()
+
+    if len(repos) > MAX_REPOS:
+        print(f"[-] La organización '{ORG}' tiene {len(repos)} repos (máximo {MAX_REPOS}).")
+        print("    Selecciona una organización más pequeña.")
+        return []
+
     cutoff = datetime.utcnow() - timedelta(days=days)
     active = []
 
