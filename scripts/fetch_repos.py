@@ -1,14 +1,14 @@
 import os
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import json
 from dotenv import load_dotenv
 
 # Cargar variables de entorno (desde la raíz)
 load_dotenv()
 
-ORG = "scrapy"
-MAX_REPOS = 50
+ORG = "nodejs"
+MAX_ACTIVE_REPOS = 50
 TOKEN = os.getenv("GITHUB_TOKEN")
 RESULTS_DIR = "data/results"
 OUTPUT_FILE = os.path.join(RESULTS_DIR, "repos_activos.json")
@@ -19,29 +19,42 @@ if not TOKEN:
 HEADERS = {"Authorization": f"token {TOKEN}"}
 
 
+def get_all_repos(org):
+    """Obtiene todos los repos públicos de la org con paginación."""
+    all_repos = []
+    page = 1
+    while True:
+        url = f"https://api.github.com/orgs/{org}/repos?per_page=100&type=public&page={page}"
+        response = requests.get(url, headers=HEADERS)
+
+        if response.status_code != 200:
+            print(f"Error en la API: {response.status_code}")
+            return []
+
+        repos = response.json()
+        if not repos:
+            break
+
+        all_repos.extend(repos)
+        if len(repos) < 100:
+            break
+        page += 1
+
+    return all_repos
+
+
 def get_active_repos(org, days=30):
-    url = f"https://api.github.com/orgs/{org}/repos?per_page=100&type=public"
-    response = requests.get(url, headers=HEADERS)
+    all_repos = get_all_repos(org)
+    print(f"    Total de repos públicos encontrados: {len(all_repos)}")
 
-    if response.status_code != 200:
-        print(f"Error en la API: {response.status_code}")
-        return []
-
-    repos = response.json()
-
-    if len(repos) > MAX_REPOS:
-        print(f"[-] La organización '{ORG}' tiene {len(repos)} repos (máximo {MAX_REPOS}).")
-        print("    Selecciona una organización más pequeña.")
-        return []
-
-    cutoff = datetime.utcnow() - timedelta(days=days)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     active = []
 
-    for r in repos:
+    for r in all_repos:
         if not r.get("pushed_at"):
             continue
 
-        pushed = datetime.strptime(r["pushed_at"], "%Y-%m-%dT%H:%M:%SZ")
+        pushed = datetime.strptime(r["pushed_at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
         if pushed >= cutoff:
             active.append({
                 "name": r["name"],
@@ -49,11 +62,16 @@ def get_active_repos(org, days=30):
                 "language": r["language"],
                 "pushed_at": r["pushed_at"]
             })
+
+    if len(active) > MAX_ACTIVE_REPOS:
+        print(f"[-] Se encontraron {len(active)} repos activos (máximo {MAX_ACTIVE_REPOS}).")
+        print("    Selecciona una organización con menos actividad reciente.")
+        return []
+
     return active
 
 
 if __name__ == "__main__":
-    # Asegurar que el directorio de destino exista
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
     print(f"[*] Buscando repositorios activos en '{ORG}'...")
