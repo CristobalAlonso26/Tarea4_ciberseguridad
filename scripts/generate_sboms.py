@@ -4,6 +4,11 @@ import subprocess
 import shutil
 from git import Repo
 
+# Asegurar que ~/.local/bin esté en PATH (donde pip --user instala binarios)
+LOCAL_BIN = os.path.expanduser("~/.local/bin")
+if LOCAL_BIN not in os.environ.get("PATH", ""):
+    os.environ["PATH"] = f"{LOCAL_BIN}:{os.environ.get('PATH', '')}"
+
 # Rutas
 REPOS_JSON = "data/results/repos_activos.json"
 REPOS_DIR = "data/repos"

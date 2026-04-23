@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Cargar variables de entorno (desde la raíz)
 load_dotenv()
 
-ORG = "encode"
+ORG = "scrapy"
 MAX_REPOS = 50
 TOKEN = os.getenv("GITHUB_TOKEN")
 RESULTS_DIR = "data/results"
