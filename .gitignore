@@ -7,4 +7,7 @@ temp_repos/
 sboms/
 vulns/
 .env
-AGENTS.md
+data/repos/
+data/results/*.json
+data/results/sast/
+.opencode/
