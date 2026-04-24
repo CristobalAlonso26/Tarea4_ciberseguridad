@@ -12,3 +12,4 @@ data/results/*.json
 data/results/sast/
 .opencode/
 AGENTS.md
+data/results/cicd/*.json
