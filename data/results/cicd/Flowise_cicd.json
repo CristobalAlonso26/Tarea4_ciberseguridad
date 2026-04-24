@@ -1,0 +1,17 @@
+{
+  "repositorio": "Flowise",
+  "hallazgos": [
+    {
+      "workflow": "main.yml",
+      "issues": [
+        "Falta npm ci"
+      ]
+    },
+    {
+      "workflow": "publish-agentflow.yml",
+      "issues": [
+        "Falta npm ci"
+      ]
+    }
+  ]
+}

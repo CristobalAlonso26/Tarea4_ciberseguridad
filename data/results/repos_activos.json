@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Flowise",
+    "clone_url": "https://github.com/FlowiseAI/Flowise.git",
+    "language": "TypeScript",
+    "stargazers_count": 52239
+  },
+  {
+    "name": "FlowiseChatEmbed",
+    "clone_url": "https://github.com/FlowiseAI/FlowiseChatEmbed.git",
+    "language": "TypeScript",
+    "stargazers_count": 436
+  },
+  {
+    "name": "FlowiseDocs",
+    "clone_url": "https://github.com/FlowiseAI/FlowiseDocs.git",
+    "language": null,
+    "stargazers_count": 256
+  },
+  {
+    "name": "FlowiseEmbedReact",
+    "clone_url": "https://github.com/FlowiseAI/FlowiseEmbedReact.git",
+    "language": "TypeScript",
+    "stargazers_count": 86
+  },
+  {
+    "name": "FlowisePy",
+    "clone_url": "https://github.com/FlowiseAI/FlowisePy.git",
+    "language": "Python",
+    "stargazers_count": 51
+  }
+]
