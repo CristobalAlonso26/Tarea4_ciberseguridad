@@ -1,6 +1,6 @@
 # Análisis de Seguridad en la Cadena de Suministro (SAST, SCA y CI/CD)
 
-**Autores:** Cristobal Ramos - Leonardo Castellón
+**Autores:** Cristobal Ramos - Leonardo Castellón - Jonathan Chavez - Joaquin Arriagada
 
 Este proyecto automatiza la evaluación del estado de seguridad de la organización **FlowiseAI** en GitHub mediante el análisis de sus repositorios más relevantes. El análisis cubre tres dimensiones clave exigidas:
 
