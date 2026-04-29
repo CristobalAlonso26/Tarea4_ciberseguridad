@@ -55,7 +55,7 @@ def procesar_repositorios():
         cicd_path = os.path.join(CICD_DIR, f"{name}_cicd.json")
 
         if not os.path.exists(repo_path):
-            Repo.clone_from(clone_url, repo_path)
+            Repo.clone_from(clone_url, repo_path, depth=1)
 
         subprocess.run(["syft", f"dir:{repo_path}", "-o", f"json={sbom_path}"], check=True, stderr=subprocess.DEVNULL)
         subprocess.run(["grype", f"sbom:{sbom_path}", "-o", f"json={vuln_path}"], check=True, stderr=subprocess.DEVNULL)

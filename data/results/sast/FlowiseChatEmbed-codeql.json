@@ -1,0 +1,453 @@
+{
+  "total_issues": 31,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 31,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/cors-permissive-configuration",
+      "rule_index": 9,
+      "level": "warning",
+      "message": "CORS Origin allows broad access due to [permissive or user controlled value](1).",
+      "file": "server.js",
+      "region": {
+        "startLine": 141,
+        "startColumn": 13,
+        "endColumn": 17
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [a file system access](1), but is not rate-limited.",
+      "file": "server.js",
+      "region": {
+        "startLine": 148,
+        "startColumn": 14,
+        "endLine": 150,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [a file system access](1), but is not rate-limited.",
+      "file": "server.js",
+      "region": {
+        "startLine": 152,
+        "startColumn": 20,
+        "endLine": 168,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/request-forgery",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).",
+      "file": "server.js",
+      "region": {
+        "startLine": 363,
+        "startColumn": 28,
+        "endLine": 368,
+        "endColumn": 7
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 125,
+      "level": "warning",
+      "message": "This guard always evaluates to false.",
+      "file": "src/components/inputs/textInput/components/TextInput.tsx",
+      "region": {
+        "startLine": 86,
+        "startColumn": 9,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 125,
+      "level": "warning",
+      "message": "This guard always evaluates to false.",
+      "file": "src/components/inputs/textInput/components/TextInput.tsx",
+      "region": {
+        "startLine": 90,
+        "startColumn": 9,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/property-access-on-non-object",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "The base expression of this property access is always undefined.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 583,
+        "startColumn": 34,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/property-access-on-non-object",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "The base expression of this property access is always undefined.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 627,
+        "startColumn": 34,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/property-access-on-non-object",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "The base expression of this property access is always undefined.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 635,
+        "startColumn": 38,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/property-access-on-non-object",
+      "rule_index": 129,
+      "level": "warning",
+      "message": "The base expression of this property access is always undefined.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 1454,
+        "startColumn": 38,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused variable formInputsData.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 516,
+        "startColumn": 10,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused variable setFormInputsData.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 516,
+        "startColumn": 26,
+        "endColumn": 43
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import SquareStopIcon.",
+      "file": "src/components/buttons/TTSButton.tsx",
+      "region": {
+        "startLine": 2,
+        "endColumn": 70
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import For.",
+      "file": "src/components/treeview/DataTransformer.tsx",
+      "region": {
+        "startLine": 1,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import For.",
+      "file": "src/components/treeview/RichTreeView.tsx",
+      "region": {
+        "startLine": 1,
+        "endColumn": 103
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import createEffect.",
+      "file": "src/components/treeview/TracesDialog.tsx",
+      "region": {
+        "startLine": 1,
+        "endColumn": 86
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import For.",
+      "file": "src/components/treeview/TreeView.tsx",
+      "region": {
+        "startLine": 1,
+        "endColumn": 105
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused variable enhancedContext.",
+      "file": "src/components/treeview/TreeView.tsx",
+      "region": {
+        "startLine": 159,
+        "startColumn": 9,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This expression always evaluates to false.",
+      "file": "src/components/Badge.tsx",
+      "region": {
+        "startLine": 20,
+        "startColumn": 13,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'liteBadge' always evaluates to false.",
+      "file": "src/components/Badge.tsx",
+      "region": {
+        "startLine": 20,
+        "startColumn": 36,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 588,
+        "startColumn": 11,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'botContainer' always evaluates to false.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 1461,
+        "startColumn": 27,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 2396,
+        "startColumn": 16,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'chatContainer' always evaluates to false.",
+      "file": "src/components/Bot.tsx",
+      "region": {
+        "startLine": 2505,
+        "startColumn": 23,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'botMessageEl' always evaluates to false.",
+      "file": "src/components/bubbles/AgentReasoningBubble.tsx",
+      "region": {
+        "startLine": 29,
+        "startColumn": 9,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'botDetailsEl' always evaluates to false.",
+      "file": "src/components/bubbles/BotBubble.tsx",
+      "region": {
+        "startLine": 281,
+        "startColumn": 9,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'botDetailsEl' always evaluates to false.",
+      "file": "src/components/bubbles/BotBubble.tsx",
+      "region": {
+        "startLine": 287,
+        "startColumn": 9,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'botDetailsEl' always evaluates to false.",
+      "file": "src/components/bubbles/BotBubble.tsx",
+      "region": {
+        "startLine": 289,
+        "startColumn": 16,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'inputRef' always evaluates to false.",
+      "file": "src/components/inputs/textInput/components/TextInput.tsx",
+      "region": {
+        "startLine": 147,
+        "startColumn": 47,
+        "endColumn": 55
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'inputRef' always evaluates to false.",
+      "file": "src/components/inputs/textInput/components/TextInput.tsx",
+      "region": {
+        "startLine": 153,
+        "startColumn": 47,
+        "endColumn": 55
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'preEl' always evaluates to false.",
+      "file": "src/features/popup/components/Popup.tsx",
+      "region": {
+        "startLine": 44,
+        "startColumn": 9,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

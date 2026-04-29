@@ -1,0 +1,2520 @@
+{
+  "total_issues": 178,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 178,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/cors-permissive-configuration",
+      "rule_index": 9,
+      "level": "warning",
+      "message": "CORS Origin allows broad access due to [permissive or user controlled value](1).\nCORS Origin allows broad access due to [permissive or user controlled value](2).\nCORS Origin allows broad access due to [permissive or user controlled value](3).",
+      "file": "packages/server/src/routes/mcp-endpoint/index.ts",
+      "region": {
+        "startLine": 15,
+        "startColumn": 13,
+        "endLine": 23,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/sql-injection",
+      "rule_index": 24,
+      "level": "warning",
+      "message": "This query object depends on a [user-provided value](1).\nThis query object depends on a [user-provided value](2).\nThis query object depends on a [user-provided value](3).",
+      "file": "packages/server/src/queue/RedisEventPublisher.ts",
+      "region": {
+        "startLine": 93,
+        "startColumn": 47,
+        "endColumn": 54
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/clear-text-cookie",
+      "rule_index": 32,
+      "level": "warning",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "file": "packages/server/src/enterprise/middleware/passport/index.ts",
+      "region": {
+        "startLine": 80,
+        "startColumn": 13,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-sanitization",
+      "rule_index": 37,
+      "level": "warning",
+      "message": "This replaces only the first occurrence of '\\]'.",
+      "file": "packages/components/nodes/sequentialagents/commonUtils.ts",
+      "region": {
+        "startLine": 146,
+        "startColumn": 40,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-multi-character-sanitization",
+      "rule_index": 40,
+      "level": "warning",
+      "message": "This string may still contain [<script](1), which may cause an HTML element injection vulnerability.",
+      "file": "packages/components/nodes/tools/MCP/Pipedream/PipedreamMCP.ts",
+      "region": {
+        "startLine": 285,
+        "startColumn": 26,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/xss-through-dom",
+      "rule_index": 47,
+      "level": "warning",
+      "message": "[DOM text](1) is reinterpreted as HTML without escaping meta-characters.",
+      "file": "packages/ui/src/views/assistants/openai/AssistantDialog.jsx",
+      "region": {
+        "startLine": 812,
+        "startColumn": 38,
+        "endColumn": 69
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/stack-trace-exposure",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "This information exposed to the user depends on [stack trace information](1).",
+      "file": "packages/server/src/controllers/stats/index.ts",
+      "region": {
+        "startLine": 49,
+        "startColumn": 45,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/stack-trace-exposure",
+      "rule_index": 54,
+      "level": "warning",
+      "message": "This information exposed to the user depends on [stack trace information](1).",
+      "file": "packages/server/src/enterprise/middleware/passport/index.ts",
+      "region": {
+        "startLine": 295,
+        "startColumn": 66,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insufficient-password-hash",
+      "rule_index": 55,
+      "level": "warning",
+      "message": "Password from [a call to extractOAuth2TokenFields](1) is hashed insecurely.\nPassword from [a call to extractOAuth2TokenFields](2) is hashed insecurely.",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1598,
+        "startColumn": 24,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/middleware/passport/index.ts",
+      "region": {
+        "startLine": 235,
+        "startColumn": 43,
+        "endLine": 270,
+        "endColumn": 6
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/middleware/passport/index.ts",
+      "region": {
+        "startLine": 272,
+        "startColumn": 36,
+        "endLine": 298,
+        "endColumn": 6
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/account.route.ts",
+      "region": {
+        "startLine": 19,
+        "startColumn": 24,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/account.route.ts",
+      "region": {
+        "startLine": 21,
+        "startColumn": 24,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/audit/index.ts",
+      "region": {
+        "startLine": 6,
+        "startColumn": 78,
+        "endColumn": 112
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.\nThis route handler performs [authorization](2), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/login-method.route.ts",
+      "region": {
+        "startLine": 8,
+        "startColumn": 48,
+        "endColumn": 74
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/login-method.route.ts",
+      "region": {
+        "startLine": 10,
+        "startColumn": 24,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/login-method.route.ts",
+      "region": {
+        "startLine": 12,
+        "startColumn": 49,
+        "endColumn": 77
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/enterprise/routes/user.route.ts",
+      "region": {
+        "startLine": 12,
+        "startColumn": 17,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.\nThis route handler performs [authorization](2), but is not rate-limited.",
+      "file": "packages/server/src/index.ts",
+      "region": {
+        "startLine": 214,
+        "startColumn": 22,
+        "endLine": 284,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/index.ts",
+      "region": {
+        "startLine": 334,
+        "startColumn": 56,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [a file system access](1), but is not rate-limited.",
+      "file": "packages/server/src/index.ts",
+      "region": {
+        "startLine": 348,
+        "startColumn": 22,
+        "endLine": 350,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [a file system access](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/components-credentials-icon/index.ts",
+      "region": {
+        "startLine": 8,
+        "startColumn": 29,
+        "endColumn": 94
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 8,
+        "startColumn": 51,
+        "endColumn": 99
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 16,
+        "startColumn": 69,
+        "endColumn": 117
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 19,
+        "startColumn": 80,
+        "endColumn": 131
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [a file system access](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/node-icons/index.ts",
+      "region": {
+        "startLine": 8,
+        "startColumn": 29,
+        "endColumn": 62
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/oauth2/index.ts",
+      "region": {
+        "startLine": 75,
+        "startColumn": 41,
+        "endLine": 178,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.\nThis route handler performs [authorization](2), but is not rate-limited.",
+      "file": "packages/server/src/routes/oauth2/index.ts",
+      "region": {
+        "startLine": 181,
+        "startColumn": 25,
+        "endLine": 347,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.\nThis route handler performs [authorization](2), but is not rate-limited.",
+      "file": "packages/server/src/routes/oauth2/index.ts",
+      "region": {
+        "startLine": 350,
+        "startColumn": 39,
+        "endLine": 474,
+        "endColumn": 2
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-rate-limiting",
+      "rule_index": 57,
+      "level": "warning",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "file": "packages/server/src/routes/verify/index.ts",
+      "region": {
+        "startLine": 6,
+        "startColumn": 45,
+        "endColumn": 74
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/sensitive-get-query",
+      "rule_index": 60,
+      "level": "warning",
+      "message": "[Route handler](1) for GET requests uses query parameter as sensitive data.",
+      "file": "packages/server/src/controllers/apikey/index.ts",
+      "region": {
+        "startLine": 95,
+        "startColumn": 51,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/sensitive-get-query",
+      "rule_index": 60,
+      "level": "warning",
+      "message": "[Route handler](1) for GET requests uses query parameter as sensitive data.",
+      "file": "packages/server/src/controllers/apikey/index.ts",
+      "region": {
+        "startLine": 98,
+        "startColumn": 62,
+        "endColumn": 79
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/sensitive-get-query",
+      "rule_index": 60,
+      "level": "warning",
+      "message": "[Route handler](1) for GET requests uses query parameter as sensitive data.",
+      "file": "packages/server/src/controllers/chatflows/index.ts",
+      "region": {
+        "startLine": 93,
+        "startColumn": 51,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/sensitive-get-query",
+      "rule_index": 60,
+      "level": "warning",
+      "message": "[Route handler](1) for GET requests uses query parameter as sensitive data.",
+      "file": "packages/server/src/controllers/chatflows/index.ts",
+      "region": {
+        "startLine": 99,
+        "startColumn": 54,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/type-confusion-through-parameter-tampering",
+      "rule_index": 68,
+      "level": "warning",
+      "message": "Potential type confusion as [this HTTP request parameter](1) may be either an array or a string.",
+      "file": "packages/components/src/storage/S3StorageProvider.ts",
+      "region": {
+        "startLine": 470,
+        "startColumn": 58,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/type-confusion-through-parameter-tampering",
+      "rule_index": 68,
+      "level": "warning",
+      "message": "Potential type confusion as [this HTTP request parameter](1) may be either an array or a string.\nPotential type confusion as [this HTTP request parameter](2) may be either an array or a string.\nPotential type confusion as [this HTTP request parameter](3) may be either an array or a string.",
+      "file": "packages/server/src/utils/getChatMessage.ts",
+      "region": {
+        "startLine": 325,
+        "startColumn": 70,
+        "endColumn": 83
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-token-validation",
+      "rule_index": 70,
+      "level": "warning",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.\nThis cookie middleware is serving a [request handler](3) without CSRF protection.\nThis cookie middleware is serving a [request handler](4) without CSRF protection.\nThis cookie middleware is serving a [request handler](5) without CSRF protection.\nThis cookie middleware is serving a [request handler](6) without CSRF protection.\nThis cookie middleware is serving a [request handler](7) without CSRF protection.\nThis cookie middleware is serving a [request handler](8) without CSRF protection.\nThis cookie middleware is serving a [request handler](9) without CSRF protection.\nThis cookie middleware is serving a [request handler](10) without CSRF protection.\nThis cookie middleware is serving a [request handler](11) without CSRF protection.\nThis cookie middleware is serving a [request handler](12) without CSRF protection.\nThis cookie middleware is serving a [request handler](13) without CSRF protection.\nThis cookie middleware is serving a [request handler](14) without CSRF protection.\nThis cookie middleware is serving a [request handler](15) without CSRF protection.\nThis cookie middleware is serving a [request handler](16) without CSRF protection.\nThis cookie middleware is serving a [request handler](17) without CSRF protection.\nThis cookie middleware is serving a [request handler](18) without CSRF protection.\nThis cookie middleware is serving a [request handler](19) without CSRF protection.\nThis cookie middleware is serving a [request handler](20) without CSRF protection.\nThis cookie middleware is serving a [request handler](21) without CSRF protection.\nThis cookie middleware is serving a [request handler](22) without CSRF protection.\nThis cookie middleware is serving a [request handler](23) without CSRF protection.\nThis cookie middleware is serving a [request handler](24) without CSRF protection.\nThis cookie middleware is serving a [request handler](25) without CSRF protection.\nThis cookie middleware is serving a [request handler](26) without CSRF protection.\nThis cookie middleware is serving a [request handler](27) without CSRF protection.\nThis cookie middleware is serving a [request handler](28) without CSRF protection.\nThis cookie middleware is serving a [request handler](29) without CSRF protection.\nThis cookie middleware is serving a [request handler](30) without CSRF protection.\nThis cookie middleware is serving a [request handler](31) without CSRF protection.\nThis cookie middleware is serving a [request handler](32) without CSRF protection.\nThis cookie middleware is serving a [request handler](33) without CSRF protection.\nThis cookie middleware is serving a [request handler](34) without CSRF protection.\nThis cookie middleware is serving a [request handler](35) without CSRF protection.\nThis cookie middleware is serving a [request handler](36) without CSRF protection.\nThis cookie middleware is serving a [request handler](37) without CSRF protection.\nThis cookie middleware is serving a [request handler](38) without CSRF protection.\nThis cookie middleware is serving a [request handler](39) without CSRF protection.\nThis cookie middleware is serving a [request handler](40) without CSRF protection.\nThis cookie middleware is serving a [request handler](41) without CSRF protection.\nThis cookie middleware is serving a [request handler](42) without CSRF protection.\nThis cookie middleware is serving a [request handler](43) without CSRF protection.\nThis cookie middleware is serving a [request handler](44) without CSRF protection.\nThis cookie middleware is serving a [request handler](45) without CSRF protection.\nThis cookie middleware is serving a [request handler](46) without CSRF protection.\nThis cookie middleware is serving a [request handler](47) without CSRF protection.\nThis cookie middleware is serving a [request handler](48) without CSRF protection.\nThis cookie middleware is serving a [request handler](49) without CSRF protection.\nThis cookie middleware is serving a [request handler](50) without CSRF protection.\nThis cookie middleware is serving a [request handler](51) without CSRF protection.\nThis cookie middleware is serving a [request handler](52) without CSRF protection.\nThis cookie middleware is serving a [request handler](53) without CSRF protection.\nThis cookie middleware is serving a [request handler](54) without CSRF protection.\nThis cookie middleware is serving a [request handler](55) without CSRF protection.\nThis cookie middleware is serving a [request handler](56) without CSRF protection.\nThis cookie middleware is serving a [request handler](57) without CSRF protection.\nThis cookie middleware is serving a [request handler](58) without CSRF protection.\nThis cookie middleware is serving a [request handler](59) without CSRF protection.\nThis cookie middleware is serving a [request handler](60) without CSRF protection.\nThis cookie middleware is serving a [request handler](61) without CSRF protection.\nThis cookie middleware is serving a [request handler](62) without CSRF protection.\nThis cookie middleware is serving a [request handler](63) without CSRF protection.\nThis cookie middleware is serving a [request handler](64) without CSRF protection.\nThis cookie middleware is serving a [request handler](65) without CSRF protection.\nThis cookie middleware is serving a [request handler](66) without CSRF protection.\nThis cookie middleware is serving a [request handler](67) without CSRF protection.\nThis cookie middleware is serving a [request handler](68) without CSRF protection.\nThis cookie middleware is serving a [request handler](69) without CSRF protection.\nThis cookie middleware is serving a [request handler](70) without CSRF protection.\nThis cookie middleware is serving a [request handler](71) without CSRF protection.\nThis cookie middleware is serving a [request handler](72) without CSRF protection.\nThis cookie middleware is serving a [request handler](73) without CSRF protection.\nThis cookie middleware is serving a [request handler](74) without CSRF protection.\nThis cookie middleware is serving a [request handler](75) without CSRF protection.\nThis cookie middleware is serving a [request handler](76) without CSRF protection.\nThis cookie middleware is serving a [request handler](77) without CSRF protection.\nThis cookie middleware is serving a [request handler](78) without CSRF protection.\nThis cookie middleware is serving a [request handler](79) without CSRF protection.\nThis cookie middleware is serving a [request handler](80) without CSRF protection.\nThis cookie middleware is serving a [request handler](81) without CSRF protection.\nThis cookie middleware is serving a [request handler](82) without CSRF protection.\nThis cookie middleware is serving a [request handler](83) without CSRF protection.\nThis cookie middleware is serving a [request handler](84) without CSRF protection.\nThis cookie middleware is serving a [request handler](85) without CSRF protection.\nThis cookie middleware is serving a [request handler](86) without CSRF protection.\nThis cookie middleware is serving a [request handler](87) without CSRF protection.\nThis cookie middleware is serving a [request handler](88) without CSRF protection.\nThis cookie middleware is serving a [request handler](89) without CSRF protection.\nThis cookie middleware is serving a [request handler](90) without CSRF protection.\nThis cookie middleware is serving a [request handler](91) without CSRF protection.\nThis cookie middleware is serving a [request handler](92) without CSRF protection.\nThis cookie middleware is serving a [request handler](93) without CSRF protection.\nThis cookie middleware is serving a [request handler](94) without CSRF protection.\nThis cookie middleware is serving a [request handler](95) without CSRF protection.\nThis cookie middleware is serving a [request handler](96) without CSRF protection.\nThis cookie middleware is serving a [request handler](97) without CSRF protection.\nThis cookie middleware is serving a [request handler](98) without CSRF protection.\nThis cookie middleware is serving a [request handler](99) without CSRF protection.\nThis cookie middleware is serving a [request handler](100) without CSRF protection.\nThis cookie middleware is serving a [request handler](101) without CSRF protection.\nThis cookie middleware is serving a [request handler](102) without CSRF protection.\nThis cookie middleware is serving a [request handler](103) without CSRF protection.\nThis cookie middleware is serving a [request handler](104) without CSRF protection.\nThis cookie middleware is serving a [request handler](105) without CSRF protection.\nThis cookie middleware is serving a [request handler](106) without CSRF protection.\nThis cookie middleware is serving a [request handler](107) without CSRF protection.\nThis cookie middleware is serving a [request handler](108) without CSRF protection.\nThis cookie middleware is serving a [request handler](109) without CSRF protection.\nThis cookie middleware is serving a [request handler](110) without CSRF protection.\nThis cookie middleware is serving a [request handler](111) without CSRF protection.\nThis cookie middleware is serving a [request handler](112) without CSRF protection.\nThis cookie middleware is serving a [request handler](113) without CSRF protection.\nThis cookie middleware is serving a [request handler](114) without CSRF protection.\nThis cookie middleware is serving a [request handler](115) without CSRF protection.\nThis cookie middleware is serving a [request handler](116) without CSRF protection.\nThis cookie middleware is serving a [request handler](117) without CSRF protection.\nThis cookie middleware is serving a [request handler](118) without CSRF protection.\nThis cookie middleware is serving a [request handler](119) without CSRF protection.\nThis cookie middleware is serving a [request handler](120) without CSRF protection.\nThis cookie middleware is serving a [request handler](121) without CSRF protection.\nThis cookie middleware is serving a [request handler](122) without CSRF protection.\nThis cookie middleware is serving a [request handler](123) without CSRF protection.\nThis cookie middleware is serving a [request handler](124) without CSRF protection.\nThis cookie middleware is serving a [request handler](125) without CSRF protection.\nThis cookie middleware is serving a [request handler](126) without CSRF protection.\nThis cookie middleware is serving a [request handler](127) without CSRF protection.\nThis cookie middleware is serving a [request handler](128) without CSRF protection.\nThis cookie middleware is serving a [request handler](129) without CSRF protection.\nThis cookie middleware is serving a [request handler](130) without CSRF protection.\nThis cookie middleware is serving a [request handler](131) without CSRF protection.\nThis cookie middleware is serving a [request handler](132) without CSRF protection.\nThis cookie middleware is serving a [request handler](133) without CSRF protection.\nThis cookie middleware is serving a [request handler](134) without CSRF protection.\nThis cookie middleware is serving a [request handler](135) without CSRF protection.\nThis cookie middleware is serving a [request handler](136) without CSRF protection.\nThis cookie middleware is serving a [request handler](137) without CSRF protection.\nThis cookie middleware is serving a [request handler](138) without CSRF protection.\nThis cookie middleware is serving a [request handler](139) without CSRF protection.\nThis cookie middleware is serving a [request handler](140) without CSRF protection.\nThis cookie middleware is serving a [request handler](141) without CSRF protection.\nThis cookie middleware is serving a [request handler](142) without CSRF protection.\nThis cookie middleware is serving a [request handler](143) without CSRF protection.\nThis cookie middleware is serving a [request handler](144) without CSRF protection.\nThis cookie middleware is serving a [request handler](145) without CSRF protection.\nThis cookie middleware is serving a [request handler](146) without CSRF protection.\nThis cookie middleware is serving a [request handler](147) without CSRF protection.\nThis cookie middleware is serving a [request handler](148) without CSRF protection.\nThis cookie middleware is serving a [request handler](149) without CSRF protection.\nThis cookie middleware is serving a [request handler](150) without CSRF protection.\nThis cookie middleware is serving a [request handler](151) without CSRF protection.\nThis cookie middleware is serving a [request handler](152) without CSRF protection.\nThis cookie middleware is serving a [request handler](153) without CSRF protection.\nThis cookie middleware is serving a [request handler](154) without CSRF protection.\nThis cookie middleware is serving a [request handler](155) without CSRF protection.\nThis cookie middleware is serving a [request handler](156) without CSRF protection.\nThis cookie middleware is serving a [request handler](157) without CSRF protection.\nThis cookie middleware is serving a [request handler](158) without CSRF protection.\nThis cookie middleware is serving a [request handler](159) without CSRF protection.\nThis cookie middleware is serving a [request handler](160) without CSRF protection.\nThis cookie middleware is serving a [request handler](161) without CSRF protection.\nThis cookie middleware is serving a [request handler](162) without CSRF protection.\nThis cookie middleware is serving a [request handler](163) without CSRF protection.\nThis cookie middleware is serving a [request handler](164) without CSRF protection.\nThis cookie middleware is serving a [request handler](165) without CSRF protection.\nThis cookie middleware is serving a [request handler](166) without CSRF protection.\nThis cookie middleware is serving a [request handler](167) without CSRF protection.\nThis cookie middleware is serving a [request handler](168) without CSRF protection.\nThis cookie middleware is serving a [request handler](169) without CSRF protection.\nThis cookie middleware is serving a [request handler](170) without CSRF protection.\nThis cookie middleware is serving a [request handler](171) without CSRF protection.\nThis cookie middleware is serving a [request handler](172) without CSRF protection.\nThis cookie middleware is serving a [request handler](173) without CSRF protection.\nThis cookie middleware is serving a [request handler](174) without CSRF protection.\nThis cookie middleware is serving a [request handler](175) without CSRF protection.\nThis cookie middleware is serving a [request handler](176) without CSRF protection.\nThis cookie middleware is serving a [request handler](177) without CSRF protection.\nThis cookie middleware is serving a [request handler](178) without CSRF protection.\nThis cookie middleware is serving a [request handler](179) without CSRF protection.\nThis cookie middleware is serving a [request handler](180) without CSRF protection.\nThis cookie middleware is serving a [request handler](181) without CSRF protection.\nThis cookie middleware is serving a [request handler](182) without CSRF protection.\nThis cookie middleware is serving a [request handler](183) without CSRF protection.\nThis cookie middleware is serving a [request handler](184) without CSRF protection.\nThis cookie middleware is serving a [request handler](185) without CSRF protection.\nThis cookie middleware is serving a [request handler](186) without CSRF protection.",
+      "file": "packages/server/src/index.ts",
+      "region": {
+        "startLine": 187,
+        "startColumn": 22,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/request-forgery",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).",
+      "file": "packages/components/evaluation/EvaluationRunner.ts",
+      "region": {
+        "startLine": 144,
+        "startColumn": 38,
+        "endColumn": 122
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/request-forgery",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).",
+      "file": "packages/components/src/httpSecurity.ts",
+      "region": {
+        "startLine": 207,
+        "startColumn": 32,
+        "endColumn": 89
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/request-forgery",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).",
+      "file": "packages/server/src/enterprise/sso/Auth0SSO.ts",
+      "region": {
+        "startLine": 149,
+        "startColumn": 41,
+        "endLine": 160,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/request-forgery",
+      "rule_index": 72,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).",
+      "file": "packages/server/src/enterprise/sso/AzureSSO.ts",
+      "region": {
+        "startLine": 120,
+        "startColumn": 41,
+        "endLine": 131,
+        "endColumn": 14
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 86,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "packages/ui/src/views/credentials/AddEditCredentialDialog.jsx",
+      "region": {
+        "startLine": 272,
+        "startColumn": 40,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/controllers/apikey/index.ts",
+      "region": {
+        "startLine": 95,
+        "startColumn": 51,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/controllers/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 14,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/controllers/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 107,
+        "startColumn": 51,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/controllers/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 113,
+        "startColumn": 14,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/controllers/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 168,
+        "startColumn": 51,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.\nThis condition guards a sensitive [action](3), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/enterprise/controllers/login-method.controller.ts",
+      "region": {
+        "startLine": 110,
+        "startColumn": 17,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/enterprise/controllers/login-method.controller.ts",
+      "region": {
+        "startLine": 117,
+        "startColumn": 24,
+        "endColumn": 44
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/enterprise/services/workspace-user.service.ts",
+      "region": {
+        "startLine": 353,
+        "startColumn": 13,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/index.ts",
+      "region": {
+        "startLine": 223,
+        "startColumn": 32,
+        "endColumn": 76
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.\nThis condition guards a sensitive [action](3), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/routes/oauth2/index.ts",
+      "region": {
+        "startLine": 185,
+        "startColumn": 13,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.\nThis condition guards a sensitive [action](3), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/routes/oauth2/index.ts",
+      "region": {
+        "startLine": 196,
+        "startColumn": 14,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.\nThis condition guards a sensitive [action](3), but a [user-provided value](2) controls it.",
+      "file": "packages/server/src/routes/oauth2/index.ts",
+      "region": {
+        "startLine": 196,
+        "startColumn": 23,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/user-controlled-bypass",
+      "rule_index": 87,
+      "level": "warning",
+      "message": "This condition guards a sensitive [action](1), but a [user-provided value](2) controls it.",
+      "file": "packages/ui/src/views/auth/ssoSuccess.jsx",
+      "region": {
+        "startLine": 16,
+        "startColumn": 17,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/http-to-file-access",
+      "rule_index": 88,
+      "level": "warning",
+      "message": "Write to file system depends on [Untrusted data](1).\nWrite to file system depends on [Untrusted data](2).",
+      "file": "packages/components/nodes/documentloaders/GoogleDrive/GoogleDrive.ts",
+      "region": {
+        "startLine": 702,
+        "startColumn": 40,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/http-to-file-access",
+      "rule_index": 88,
+      "level": "warning",
+      "message": "Write to file system depends on [Untrusted data](1).\nWrite to file system depends on [Untrusted data](2).",
+      "file": "packages/components/src/storage/LocalStorageProvider.ts",
+      "region": {
+        "startLine": 40,
+        "startColumn": 36,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/http-to-file-access",
+      "rule_index": 88,
+      "level": "warning",
+      "message": "Write to file system depends on [Untrusted data](1).\nWrite to file system depends on [Untrusted data](2).\nWrite to file system depends on [Untrusted data](3).\nWrite to file system depends on [Untrusted data](4).\nWrite to file system depends on [Untrusted data](5).\nWrite to file system depends on [Untrusted data](6).\nWrite to file system depends on [Untrusted data](7).",
+      "file": "packages/components/src/storage/LocalStorageProvider.ts",
+      "region": {
+        "startLine": 74,
+        "startColumn": 36,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-temporary-file",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "Insecure creation of file in [the os temp dir](1).",
+      "file": "packages/components/nodes/documentloaders/GoogleDrive/GoogleDrive.ts",
+      "region": {
+        "startLine": 702,
+        "startColumn": 26,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/insecure-temporary-file",
+      "rule_index": 90,
+      "level": "warning",
+      "message": "Insecure creation of file in [the os temp dir](1).",
+      "file": "packages/components/nodes/documentloaders/S3File/S3File.ts",
+      "region": {
+        "startLine": 1017,
+        "startColumn": 33,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 463,
+        "startColumn": 52,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 468,
+        "startColumn": 61,
+        "endColumn": 134
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 474,
+        "startColumn": 61,
+        "endColumn": 134
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 484,
+        "startColumn": 57,
+        "endColumn": 117
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 519,
+        "startColumn": 52,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 524,
+        "startColumn": 61,
+        "endColumn": 134
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 530,
+        "startColumn": 61,
+        "endColumn": 133
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 537,
+        "startColumn": 57,
+        "endColumn": 117
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/controllers/mcp-endpoint/index.ts",
+      "region": {
+        "startLine": 54,
+        "startColumn": 22,
+        "endColumn": 70
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/controllers/predictions/index.ts",
+      "region": {
+        "startLine": 36,
+        "startColumn": 21,
+        "endColumn": 98
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).\nLog entry depends on a [user-provided value](2).\nLog entry depends on a [user-provided value](3).",
+      "file": "packages/server/src/queue/RedisEventPublisher.ts",
+      "region": {
+        "startLine": 89,
+        "startColumn": 25,
+        "endColumn": 109
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).\nLog entry depends on a [user-provided value](2).\nLog entry depends on a [user-provided value](3).",
+      "file": "packages/server/src/queue/RedisEventPublisher.ts",
+      "region": {
+        "startLine": 95,
+        "startColumn": 26,
+        "endColumn": 89
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/chatflows/index.ts",
+      "region": {
+        "startLine": 135,
+        "startColumn": 26,
+        "endColumn": 92
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 355,
+        "startColumn": 26,
+        "endColumn": 127
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 341,
+        "startColumn": 26,
+        "endColumn": 94
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/fetch-links/index.ts",
+      "region": {
+        "startLine": 18,
+        "startColumn": 56,
+        "endColumn": 86
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/fetch-links/index.ts",
+      "region": {
+        "startLine": 20,
+        "startColumn": 56,
+        "endColumn": 87
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/mcp-endpoint/index.ts",
+      "region": {
+        "startLine": 296,
+        "startColumn": 26,
+        "endColumn": 111
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).\nLog entry depends on a [user-provided value](2).\nLog entry depends on a [user-provided value](3).",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 1347,
+        "startColumn": 39,
+        "endColumn": 99
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).\nLog entry depends on a [user-provided value](2).\nLog entry depends on a [user-provided value](3).",
+      "file": "packages/server/src/utils/buildChatflow.ts",
+      "region": {
+        "startLine": 1088,
+        "startColumn": 26,
+        "endColumn": 104
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).\nLog entry depends on a [user-provided value](2).\nLog entry depends on a [user-provided value](3).",
+      "file": "packages/server/src/utils/buildChatflow.ts",
+      "region": {
+        "startLine": 1113,
+        "startColumn": 22,
+        "endColumn": 82
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).\nLog entry depends on a [user-provided value](2).\nLog entry depends on a [user-provided value](3).",
+      "file": "packages/server/src/utils/buildChatflow.ts",
+      "region": {
+        "startLine": 1113,
+        "startColumn": 84,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/createAttachment.ts",
+      "region": {
+        "startLine": 220,
+        "startColumn": 33,
+        "endColumn": 134
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/createAttachment.ts",
+      "region": {
+        "startLine": 231,
+        "startColumn": 29,
+        "endColumn": 139
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/logger.ts",
+      "region": {
+        "startLine": 137,
+        "startColumn": 32,
+        "endColumn": 89
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/log-injection",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/logger.ts",
+      "region": {
+        "startLine": 138,
+        "startColumn": 25,
+        "endColumn": 82
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 720,
+        "startColumn": 38,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 721,
+        "startColumn": 43,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/custom-mcp-servers/index.ts",
+      "region": {
+        "startLine": 254,
+        "startColumn": 47,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).\nA property name to write to depends on a [user-provided value](3).\nA property name to write to depends on a [user-provided value](4).",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 668,
+        "startColumn": 35,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).\nA property name to write to depends on a [user-provided value](3).",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 1015,
+        "startColumn": 35,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).\nA property name to write to depends on a [user-provided value](3).",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 1021,
+        "startColumn": 35,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/services/evaluations/EvaluatorRunner.ts",
+      "region": {
+        "startLine": 37,
+        "startColumn": 31,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 1649,
+        "startColumn": 42,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/fileRepository.ts",
+      "region": {
+        "startLine": 90,
+        "startColumn": 54,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/fileRepository.ts",
+      "region": {
+        "startLine": 100,
+        "startColumn": 42,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 232,
+        "startColumn": 10,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 250,
+        "startColumn": 32,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 854,
+        "startColumn": 41,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1133,
+        "startColumn": 38,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1143,
+        "startColumn": 35,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1145,
+        "startColumn": 35,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1166,
+        "startColumn": 39,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1171,
+        "startColumn": 47,
+        "endColumn": 53
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1173,
+        "startColumn": 47,
+        "endColumn": 53
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1176,
+        "startColumn": 43,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1179,
+        "startColumn": 39,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1240,
+        "startColumn": 23,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1392,
+        "startColumn": 41,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 1433,
+        "startColumn": 38,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 2081,
+        "startColumn": 16,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/logger.ts",
+      "region": {
+        "startLine": 81,
+        "startColumn": 23,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).\nA property name to write to depends on a [user-provided value](2).",
+      "file": "packages/server/src/utils/logger.ts",
+      "region": {
+        "startLine": 84,
+        "startColumn": 27,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 94,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/server/src/utils/sanitize.util.ts",
+      "region": {
+        "startLine": 26,
+        "startColumn": 29,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-space-in-concatenation",
+      "rule_index": 114,
+      "level": "warning",
+      "message": "This string appears to be missing a space after 'factors.'.",
+      "file": "packages/components/nodes/vectorstores/Vectara/Vectara.ts",
+      "region": {
+        "startLine": 93,
+        "startColumn": 21,
+        "endColumn": 168
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-space-in-concatenation",
+      "rule_index": 114,
+      "level": "warning",
+      "message": "This string appears to be missing a space after 'results.'.",
+      "file": "packages/components/nodes/vectorstores/Vectara/Vectara.ts",
+      "region": {
+        "startLine": 124,
+        "startColumn": 21,
+        "endColumn": 82
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/redundant-operation",
+      "rule_index": 119,
+      "level": "warning",
+      "message": "Operands [chatflow](1) and [chatflow](2) are identical.",
+      "file": "packages/ui/src/views/evaluations/CreateEvaluationDialog.jsx",
+      "region": {
+        "startLine": 562,
+        "startColumn": 44,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 125,
+      "level": "warning",
+      "message": "This guard always evaluates to true.",
+      "file": "packages/components/nodes/vectorstores/Zep/Zep.ts",
+      "region": {
+        "startLine": 190,
+        "startColumn": 9,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unneeded-defensive-code",
+      "rule_index": 125,
+      "level": "warning",
+      "message": "This guard always evaluates to false.",
+      "file": "packages/ui/src/utils/genericHelper.js",
+      "region": {
+        "startLine": 1024,
+        "startColumn": 27,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'processedArg' is of type object, but it is compared to [an expression](1) of type null.",
+      "file": "packages/components/nodes/tools/OpenAPIToolkit/core.ts",
+      "region": {
+        "startLine": 221,
+        "startColumn": 69,
+        "endColumn": 81
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'value' is of type object, but it is compared to [an expression](1) of type null.",
+      "file": "packages/components/nodes/vectorstores/Zep/Zep.ts",
+      "region": {
+        "startLine": 187,
+        "startColumn": 38,
+        "endColumn": 43
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'variableValue' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 282,
+        "startColumn": 95,
+        "endColumn": 108
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'variableValue' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 346,
+        "startColumn": 95,
+        "endColumn": 108
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'variableValue' is of type date, object or regular expression, but it is compared to [an expression](1) of type null.",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 358,
+        "startColumn": 95,
+        "endColumn": 108
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'reactFlowNode' cannot be of type undefined, but it is compared to ['undefined'](1) of type undefined.",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 1944,
+        "startColumn": 31,
+        "endColumn": 44
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'reactFlowNode' cannot be of type undefined, but it is compared to ['undefined'](1) of type undefined.",
+      "file": "packages/server/src/utils/index.ts",
+      "region": {
+        "startLine": 581,
+        "startColumn": 31,
+        "endColumn": 44
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "Variable 'selectedInput' is of type string, but it is compared to ['undefined'](1) of type undefined.",
+      "file": "packages/ui/src/views/chatmessage/ChatMessage.jsx",
+      "region": {
+        "startLine": 1023,
+        "startColumn": 17,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/comparison-between-incompatible-types",
+      "rule_index": 131,
+      "level": "warning",
+      "message": "This expression is of type boolean, but it is compared to [an expression](1) of type number.",
+      "file": "packages/ui/src/views/evaluations/CreateEvaluationDialog.jsx",
+      "region": {
+        "startLine": 266,
+        "startColumn": 39,
+        "endColumn": 73
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import Index.",
+      "file": "packages/server/src/database/entities/Credential.ts",
+      "region": {
+        "startLine": 2,
+        "endColumn": 108
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import IAssistant.",
+      "file": "packages/server/src/database/entities/Dataset.ts",
+      "region": {
+        "startLine": 3,
+        "endColumn": 55
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import CreateDateColumn.",
+      "file": "packages/server/src/database/entities/DatasetRow.ts",
+      "region": {
+        "startLine": 2,
+        "endColumn": 108
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused imports IAssistant, IDataset.",
+      "file": "packages/server/src/database/entities/DatasetRow.ts",
+      "region": {
+        "startLine": 3,
+        "endColumn": 68
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused import UpdateDateColumn.",
+      "file": "packages/server/src/database/entities/Lead.ts",
+      "region": {
+        "startLine": 2,
+        "endColumn": 101
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused variable position.",
+      "file": "packages/ui/src/views/agentflowsv2/AgentFlowNode.jsx",
+      "region": {
+        "startLine": 64,
+        "startColumn": 12,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 135,
+      "level": "warning",
+      "message": "Unused variable position.",
+      "file": "packages/ui/src/views/agentflowsv2/IterationNode.jsx",
+      "region": {
+        "startLine": 59,
+        "startColumn": 12,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of response is unused, since it is always overwritten.",
+      "file": "packages/components/nodes/agentflow/Agent/Agent.ts",
+      "region": {
+        "startLine": 1069,
+        "startColumn": 17,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to _toolCallMessages here is unused.",
+      "file": "packages/components/nodes/agentflow/Agent/Agent.ts",
+      "region": {
+        "startLine": 1151,
+        "startColumn": 17,
+        "endColumn": 83
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to _toolCallMessages here is unused.",
+      "file": "packages/components/nodes/agentflow/Agent/Agent.ts",
+      "region": {
+        "startLine": 1227,
+        "startColumn": 17,
+        "endColumn": 83
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of response is unused, since it is always overwritten.",
+      "file": "packages/components/nodes/agentflow/ConditionAgent/ConditionAgent.ts",
+      "region": {
+        "startLine": 375,
+        "startColumn": 17,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of response is unused, since it is always overwritten.",
+      "file": "packages/components/nodes/agentflow/LLM/LLM.ts",
+      "region": {
+        "startLine": 461,
+        "startColumn": 17,
+        "endColumn": 66
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of output is unused, since it is always overwritten.",
+      "file": "packages/components/nodes/agents/ToolAgent/ToolAgent.ts",
+      "region": {
+        "startLine": 211,
+        "startColumn": 13,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to isJobCompleted here is unused.",
+      "file": "packages/components/nodes/documentloaders/FireCrawl/FireCrawl.ts",
+      "region": {
+        "startLine": 486,
+        "startColumn": 25,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to isJobCompleted here is unused.",
+      "file": "packages/components/nodes/documentloaders/FireCrawl/FireCrawl.ts",
+      "region": {
+        "startLine": 513,
+        "startColumn": 25,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to index here is unused.",
+      "file": "packages/components/nodes/vectorstores/Meilisearch/Meilisearch.ts",
+      "region": {
+        "startLine": 212,
+        "startColumn": 17,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of fileInputFieldFromMimeType is unused, since it is always overwritten.",
+      "file": "packages/components/src/utils.ts",
+      "region": {
+        "startLine": 798,
+        "startColumn": 33,
+        "endColumn": 71
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of source is unused, since it is always overwritten.",
+      "file": "packages/server/src/Interface.DocumentStore.ts",
+      "region": {
+        "startLine": 188,
+        "startColumn": 9,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to status here is unused.",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 2011,
+        "startColumn": 17,
+        "endColumn": 35
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The value assigned to status here is unused.",
+      "file": "packages/server/src/utils/buildAgentflow.ts",
+      "region": {
+        "startLine": 2076,
+        "startColumn": 13,
+        "endColumn": 33
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of positionSX is unused, since it is always overwritten.",
+      "file": "packages/ui/src/ui-component/extended/Transitions.jsx",
+      "region": {
+        "startLine": 10,
+        "startColumn": 9,
+        "endLine": 12,
+        "endColumn": 6
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 138,
+      "level": "warning",
+      "message": "The initial value of canSubmit is unused, since it is always overwritten.",
+      "file": "packages/ui/src/views/assistants/custom/CustomAssistantConfigurePreview.jsx",
+      "region": {
+        "startLine": 209,
+        "startColumn": 13,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/use-before-declaration",
+      "rule_index": 139,
+      "level": "warning",
+      "message": "Variable 'global' is used before its [declaration](1).",
+      "file": "packages/ui/index.html",
+      "region": {
+        "startLine": 63,
+        "startColumn": 17,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "This write to property 'outputs' is useless, since [another property write](1) always overrides it.",
+      "file": "packages/components/nodes/vectorstores/Meilisearch/Meilisearch.ts",
+      "region": {
+        "startLine": 96,
+        "startColumn": 9,
+        "endLine": 103,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-property",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "This write to property 'framework' is useless, since [another property write](1) always overrides it.",
+      "file": "packages/server/src/services/marketplaces/index.ts",
+      "region": {
+        "startLine": 220,
+        "startColumn": 13,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function addAsyncOption](1).",
+      "file": "packages/ui/src/views/canvas/CredentialInputHandler.jsx",
+      "region": {
+        "startLine": 115,
+        "startColumn": 67,
+        "endColumn": 82
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function abortMessage](1).",
+      "file": "packages/ui/src/views/chatmessage/ChatMessage.jsx",
+      "region": {
+        "startLine": 1189,
+        "startColumn": 38,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function onEditSaved](1).",
+      "file": "packages/ui/src/views/docstore/ExpandedChunkDialog.jsx",
+      "region": {
+        "startLine": 110,
+        "startColumn": 60,
+        "endColumn": 64
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function goPrev](1).",
+      "file": "packages/ui/src/views/evaluations/CreateEvaluationDialog.jsx",
+      "region": {
+        "startLine": 661,
+        "startColumn": 110,
+        "endColumn": 120
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 164,
+      "level": "warning",
+      "message": "Superfluous argument passed to [function parseFloat](1).",
+      "file": "packages/ui/src/views/evaluations/EvaluationResult.jsx",
+      "region": {
+        "startLine": 268,
+        "startColumn": 103,
+        "endColumn": 105
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'loading' always evaluates to false.",
+      "file": "packages/agentflow/src/features/generator/GenerateFlowDialog.tsx",
+      "region": {
+        "startLine": 233,
+        "startColumn": 43,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'fileAnnotations' always evaluates to true.",
+      "file": "packages/components/nodes/agentflow/Agent/Agent.ts",
+      "region": {
+        "startLine": 1527,
+        "startColumn": 30,
+        "endColumn": 45
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'fileAnnotations' always evaluates to true.",
+      "file": "packages/components/nodes/agentflow/Agent/Agent.ts",
+      "region": {
+        "startLine": 1531,
+        "startColumn": 37,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "packages/components/nodes/documentloaders/FireCrawl/FireCrawl.ts",
+      "region": {
+        "startLine": 480,
+        "startColumn": 16,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "packages/components/nodes/documentloaders/FireCrawl/FireCrawl.ts",
+      "region": {
+        "startLine": 507,
+        "startColumn": 16,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'extractAllStrings' always evaluates to false.",
+      "file": "packages/components/nodes/documentloaders/Json/Json.ts",
+      "region": {
+        "startLine": 471,
+        "startColumn": 24,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'user' always evaluates to true.",
+      "file": "packages/server/src/enterprise/controllers/user.controller.ts",
+      "region": {
+        "startLine": 58,
+        "startColumn": 17,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'chatId' always evaluates to true.",
+      "file": "packages/server/src/queue/RedisEventSubscriber.ts",
+      "region": {
+        "startLine": 233,
+        "startColumn": 17,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to false.",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 1916,
+        "startColumn": 37,
+        "endColumn": 50
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to false.",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 1920,
+        "startColumn": 29,
+        "endColumn": 47
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to false.",
+      "file": "packages/server/src/services/documentstore/index.ts",
+      "region": {
+        "startLine": 1924,
+        "startColumn": 27,
+        "endColumn": 43
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'loading' always evaluates to false.",
+      "file": "packages/ui/src/ui-component/dialog/AgentflowGeneratorDialog.jsx",
+      "region": {
+        "startLine": 428,
+        "startColumn": 41,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'content' always evaluates to true.",
+      "file": "packages/ui/src/ui-component/extended/Feedback.jsx",
+      "region": {
+        "startLine": 55,
+        "startColumn": 22,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "packages/ui/src/ui-component/extended/TextToSpeech.jsx",
+      "region": {
+        "startLine": 273,
+        "startColumn": 20,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "packages/ui/src/utils/genericHelper.js",
+      "region": {
+        "startLine": 1016,
+        "startColumn": 16,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'userInput' always evaluates to true.",
+      "file": "packages/ui/src/views/chatmessage/ChatMessage.jsx",
+      "region": {
+        "startLine": 1247,
+        "startColumn": 32,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This negation always evaluates to true.",
+      "file": "packages/ui/src/views/chatmessage/ChatMessage.jsx",
+      "region": {
+        "startLine": 1815,
+        "startColumn": 20,
+        "endColumn": 25
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This expression always evaluates to true.",
+      "file": "packages/ui/src/views/docstore/DeleteDocStoreDialog.jsx",
+      "region": {
+        "startLine": 229,
+        "startColumn": 55,
+        "endColumn": 85
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This use of variable 'query' always evaluates to true.",
+      "file": "packages/ui/src/views/docstore/VectorStoreQuery.jsx",
+      "region": {
+        "startLine": 112,
+        "startColumn": 32,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 185,
+      "level": "warning",
+      "message": "This expression always evaluates to true.",
+      "file": "packages/ui/src/views/marketplaces/index.jsx",
+      "region": {
+        "startLine": 432,
+        "startColumn": 50,
+        "endColumn": 70
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

@@ -225,7 +225,7 @@ class CodeQLAnalyzer:
             try:
                 if not ruta_repo.exists():
                     LOGGER.info("Clonando %s...", repo_name)
-                    Repo.clone_from(clone_url, ruta_repo)
+                    Repo.clone_from(clone_url, ruta_repo, depth=1)
 
                 sarif_data = self.run_codeql(repo_path_rel, language=codeql_lang)
                 analysis = self.parse_sarif(sarif_data)

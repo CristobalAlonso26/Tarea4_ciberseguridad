@@ -3,19 +3,19 @@
     "name": "Flowise",
     "clone_url": "https://github.com/FlowiseAI/Flowise.git",
     "language": "TypeScript",
-    "stargazers_count": 52239
+    "stargazers_count": 52367
   },
   {
     "name": "FlowiseChatEmbed",
     "clone_url": "https://github.com/FlowiseAI/FlowiseChatEmbed.git",
     "language": "TypeScript",
-    "stargazers_count": 436
+    "stargazers_count": 435
   },
   {
     "name": "FlowiseDocs",
     "clone_url": "https://github.com/FlowiseAI/FlowiseDocs.git",
     "language": null,
-    "stargazers_count": 256
+    "stargazers_count": 257
   },
   {
     "name": "FlowiseEmbedReact",
