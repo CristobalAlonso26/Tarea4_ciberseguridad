@@ -2,11 +2,12 @@
 
 **Autores:** Cristobal Ramos - Leonardo Castellón - Jonathan Chavez - Joaquin Arriagada
 
-Este proyecto automatiza la evaluación del estado de seguridad de la organización **FlowiseAI** en GitHub mediante el análisis de sus repositorios más relevantes. El análisis cubre tres dimensiones clave exigidas:
+Este proyecto automatiza la evaluación del estado de seguridad de la organización **FlowiseAI** en GitHub mediante el análisis de sus repositorios más relevantes. El análisis cubre cuatro dimensiones clave exigidas:
 
 1. **Código Fuente (SAST):** Búsqueda de vulnerabilidades directas en el código mediante análisis estático utilizando CodeQL.
 2. **Dependencias (SCA):** Generación de inventarios de software (SBOMs) con Syft y escaneo de componentes vulnerables o desactualizados con Grype.
 3. **Configuraciones CI/CD:** Revisión automatizada de los workflows de GitHub Actions para detectar configuraciones riesgosas, permisos excesivos y uso de componentes no confiables.
+4. **Gestión de Secretos:** Identificación de credenciales, tokens y llaves de acceso expuestas en el historial de los repositorios utilizando Gitleaks.
 
 ## Prerrequisitos del Sistema
 
@@ -30,6 +31,14 @@ curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo
 ### 3. Instalar Grype (Escáner de Vulnerabilidades SCA)
 ```bash
 curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo sh -s -- -b /usr/local/bin
+```
+
+### 4. Instalar Gitleaks (Escáner de Secretos)
+```bash
+wget https://github.com/gitleaks/gitleaks/releases/download/v8.18.2/gitleaks_8.18.2_linux_x64.tar.gz
+tar -xvf gitleaks_8.18.2_linux_x64.tar.gz
+sudo mv gitleaks /usr/local/bin/
+rm gitleaks_8.18.2_linux_x64.tar.gz
 ```
 
 ## Instalación del Entorno Python
@@ -64,5 +73,12 @@ Ejecuta los siguientes comandos desde la raíz del proyecto para automatizar la 
    python scripts/generate_sboms.py
    ```
 
-4. **Ver resultados, métricas y conclusiones:**
-   Abre e inicia tu entorno de Jupyter/Notebook. Navega y ejecuta todas las celdas del archivo `nbs/vuln/analisis_vulnerabilidades_flowise.ipynb` para visualizar el análisis consolidado de las tres dimensiones y exportar los datasets en formato `.csv`.
+4. **Escaneo de Secretos en el historial de código con Gitleaks:**
+   ```bash
+   ./scripts/run_gitleaks.sh
+   ```
+
+5. **Ver resultados, métricas y conclusiones:**
+   - Abre e inicia tu entorno de Jupyter/Notebook. 
+   - Navega y ejecuta las celdas de `nbs/vuln/analisis_vulnerabilidades_flowise.ipynb` para visualizar el análisis consolidado de las primeras tres dimensiones.
+   - Navega y ejecuta las celdas de `nbs/tarea5_analisis.ipynb` para visualizar el análisis cuantitativo y cualitativo de la exposición de secretos.
